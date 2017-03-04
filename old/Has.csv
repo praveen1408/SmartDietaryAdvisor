@@ -1,0 +1,9 @@
+id,operation,input_ingredient,input_recipe,quantity,unit,output,procedure
+0,Take,0,?,1,?,2,and whisk them
+1,Add,1,0,?,?,5,?
+2,Take,4,?,0,tsp,1,and warm them
+3,Add,?,2,?,?,0,?
+4,Add,?,1,?,?,0,?
+5,Cook,?,5,?,?,3,for two mins to make
+6,Add,3,3,?,?,4,?
+7,Boil,0,?,1,?,6,'and boil in a saucepan'

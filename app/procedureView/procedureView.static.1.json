@@ -1,0 +1,41 @@
+{
+    "ingredients":[
+        {"id":0,"name":"salt","class":"essential","calorie":0,"unit":"table spoon"},
+        {"id":1,"name":"pepper","class":"essential","calorie":0,"unit":"table spoon"},
+        {"id":2,"name":"egg","class":"egg","calorie":155,"unit":null},
+        {"id":3,"name":"cheese","class":"fat","calorie":402,"unit":"table spoon"},
+        {"id":4,"name":"butter","class":"fat","calorie":717,"unit":"table spoon"},
+        {"id":5,"name":"cabbage","class":"vegetable","calorie":36,"unit":null},
+        {"id":6,"name":"carrot","class":"vegetable","calorie":41,"unit":null},
+        {"id":7,"name":"potato","class":"vegetable","calorie":77,"unit":null},
+        {"id":8,"name":"tomato","class":"vegetable","calorie":18,"unit":null},
+        {"id":9,"name":"chicken meat","class":"meat","calorie":239,"unit":"serving"},
+        {"id":10,"name":"duck meat","class":"meat","calorie":404,"unit":"serving"}
+    ],
+    "operations":[
+        {"class":"assembly","prerequisite":null,"begin":"Bake","end":"in a oven","attribute":null},
+        {"class":"assembly","prerequisite":null,"begin":"Fry","end":"in a pan","attribute":null},
+        {"class":"egg","prerequisite":null,"begin":"Take","end":"and boil","attribute":"boiled"},
+        {"class":"egg","prerequisite":1,"begin":"Take","end":"and shred","attribute":"shreaded"},
+        {"class":"essential","prerequisite":null,"begin":"Add","end":null,"attribute":null},
+        {"class":"essential","prerequisite":null,"begin":"Add","end":null,"attribute":null},
+        {"class":"fat","prerequisite":null,"begin":"Take","end":"and melt","attribute":"melted"},
+        {"class":"vegetable","prerequisite":null,"begin":"Take","end":"and chop","attribute":"chopped"},
+        {"class":"vegetable","prerequisite":7,"begin":"Cook","end":"until ready","attribute":"cooked"},
+        {"class":"meat","prerequisite":null,"begin":"Take","end":"and chop","attribute":"chopped"},
+        {"class":"meat","prerequisite":9,"begin":"Cook","end":"until ready","attribute":"cooked"}
+    ],
+    "adjacencyMatrix":[
+        [  6,5,9,2,0,6,6,8,6,1,3 ],
+        [  5,8,5,5,10,8,6,8,4,6,8 ],
+        [  9,5,5,6,9,4,7,1,5,8,4 ],
+        [  2,5,6,9,5,8,6,10,2,2,7 ],
+        [  0,10,9,5,7,7,5,2,2,2,4 ],
+        [  6,8,4,8,7,4,8,6,7,6,6 ],
+        [  6,6,7,6,5,8,3,3,4,6,8 ],
+        [  8,8,1,10,2,6,3,7,4,5,6 ],
+        [  6,4,5,2,2,7,4,4,9,3,9 ],
+        [  1,6,8,2,2,6,6,5,3,1,6 ],
+        [  3,8,4,7,4,6,8,6,9,6,4 ]
+    ]
+}

@@ -1,0 +1,8 @@
+id,name,anonymous
+0,melted butter and whisked eggs,TRUE
+1,melted butter,FALSE
+2,whisked eggs,FALSE
+3,omlette,FALSE
+4,omlette with cheese,TRUE
+5,melted butter and whisked eggs and salt,TRUE
+6,boiled egg,FALSE

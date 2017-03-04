@@ -1,0 +1,28 @@
+{
+    "operations":[
+        {"class":"assembly","prerequisite":null,"begin":"Bake","end":"in a oven","attribute":null},
+        {"class":"assembly","prerequisite":null,"begin":"Fry","end":"in a pan","attribute":null},
+        {"class":"egg","prerequisite":null,"begin":"Take","end":"and boil","attribute":"boiled"},
+        {"class":"egg","prerequisite":1,"begin":"Take","end":"and shred","attribute":"shreaded"},
+        {"class":"essential","prerequisite":null,"begin":"Add","end":null,"attribute":null},
+        {"class":"essential","prerequisite":null,"begin":"Add","end":null,"attribute":null},
+        {"class":"fat","prerequisite":null,"begin":"Take","end":"and melt","attribute":"melted"},
+        {"class":"vegetable","prerequisite":null,"begin":"Take","end":"and chop","attribute":"chopped"},
+        {"class":"vegetable","prerequisite":7,"begin":"Cook","end":"until ready","attribute":"cooked"},
+        {"class":"meat","prerequisite":null,"begin":"Take","end":"and chop","attribute":"chopped"},
+        {"class":"meat","prerequisite":9,"begin":"Cook","end":"until ready","attribute":"cooked"},
+        {"class":"fish","prerequisite":null,"begin":"Take","end":"and chop","attribute":"chopped"},
+        {"class":"fish","prerequisite":11,"begin":"Cook","end":"until ready","attribute":"cooked"}
+    ],
+    "adjacencyMatrix":
+    [[6,4,9,8,9,6,2,1,0,4],
+ [4,9,2,6,4,6,5,4,6,7],
+ [9,2,5,5,8,8,2,4,4,6],
+ [8,6,5,8,6,6,6,5,4,8],
+ [9,4,8,6,2,4,8,3,4,2],
+ [6,6,8,6,4,1,7,4,8,6],
+ [2,5,2,6,8,7,2,6,4,2],
+ [1,4,4,5,3,4,6,4,6,8],
+ [0,6,4,4,4,8,4,6,1,2],
+ [4,7,6,8,2,6,2,8,2,9]]
+}

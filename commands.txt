@@ -1,0 +1,16 @@
+MATCH (n) DETACH DELETE n;
+
+LOAD CSV WITH HEADERS FROM "http://localhost/Ingredients.csv" AS row
+CREATE (n:Ingredient)
+SET n = row,
+  n.id = toInt(row.id),
+  n.name = row.name,
+  n.class = row.class,
+  n.calorie = toInt(row.calorie),
+  n.unit = row.unit;
+
+LOAD CSV WITH HEADERS FROM "http://localhost/Combinations.csv" AS row
+MATCH (n1:Ingredient),(n2:Ingredient)
+WHERE (n1.id = toInt(row.id1) and n2.id = toInt(row.id2))
+CREATE (n1)-[:combines{count:toInt(row.count)}]->(n2);
+

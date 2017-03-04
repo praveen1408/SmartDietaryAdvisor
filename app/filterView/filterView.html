@@ -1,0 +1,7 @@
+<div>
+    Choose your preferences
+    <div class="checkbox" ng-repeat="filter in filters">
+        <label><input type="checkbox" ng-model="filter.value">{{filter.name}}</label>
+    </div>
+    <div>Total calories = {{calories.value}}kcal</div>
+</div>
